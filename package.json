@@ -1,0 +1,40 @@
+{
+  "name": "devkit-js",
+  "version": "1.0.5",
+  "description": "DevKit project creator. Please ignore ... for now!",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "devkit": "bin/devkit.js"
+  },
+  "files": [
+    "lib", "template"
+  ],
+  "scripts": {
+    "test": "node index.test.js",
+    "prepublish": "npm test"
+  },
+  "keywords": [
+    "DevKit",
+    "CLI"
+  ],
+  "author": "iClusterDev",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "commander": "^6.2.0",
+    "figlet": "^1.5.0",
+    "fs-extra": "^9.0.1",
+    "inquirer": "^7.3.3",
+    "ora": "^5.1.0",
+    "replace-in-file": "^6.1.0",
+    "typeis.js": "^1.0.18"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": ""
+}
