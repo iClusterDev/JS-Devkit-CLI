@@ -1,37 +1,64 @@
-## Welcome to GitHub Pages
+# Devkit CLI
 
-You can use the [editor on GitHub](https://github.com/iClusterDev/JS-Devkit-CLI/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Devkit CLI is a Command Line tool for superfast scaffolding of any simple Vanilla JavaScript App.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Installation
 
-### Markdown
+Install DevKit CLI globally using [npm](https://www.npmjs.com/package/devkit-js).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+npm install -g devkit-js
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Creating a new project
 
-### Jekyll Themes
+In the terminal run
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/iClusterDev/JS-Devkit-CLI/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```bash
+devkit create <your new project name>
+```
 
-### Support or Contact
+This will create the project folder in your current working directory and take care of installing all the necessary dependencies.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The created project will have the following folder structure:
+
+```bash
+├── ...
+├── src                 # src directory, where your stuff go
+│   ├── js              # JS components and main app.js
+│   ├── scss            # SCSS components and main main.scss
+│   ├── index.html      # main html
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── main.js
+├── ...
+```
+
+Once the project is created navigate to the project directory and start building your new app. A Dev Server comes out of the box. In order to start the server run:
+
+```bash
+npm run dev
+```
+
+When ready to deploy/build for production and generate the distribution files, run in the terminal:
+
+```bash
+npm run build
+```
+
+This will automatically generate all the distribution files and put them in the `dist` directory.
+
+The `.scss` files will be compiled into `.css` and minified. The `.js` files will be transpiled using [babel](https://babeljs.io/). All the styles and scripts will be automatically injected into your `index.html`.
+
+## Contributing
+
+If you find any issue, feel free to submit a pull request
+
+## Author
+
+[iClusterDev](https://github.com/iClusterDev)
+
+## License
+
+[MIT](https://github.com/iClusterDev/JS-Devkit-CLI/blob/main/LICENSE)
