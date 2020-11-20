@@ -1,6 +1,6 @@
 # Devkit CLI
 
-Devkit CLI is a Command Line Interface application for superfast scaffolding of any simple Vanilla JavaScript App.
+Devkit CLI is a Command Line tool for superfast scaffolding of any simple Vanilla JavaScript App.
 
 ## Installation
 
