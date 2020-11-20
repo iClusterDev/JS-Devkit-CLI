@@ -49,11 +49,11 @@ npm run build
 
 This will automatically generate all the distribution files and put them in the `dist` directory.
 
-The `.scss` files will be compiled into `CSS` and minified. The `.js` files will be transpiled using [babel](https://babeljs.io/). All the styles and scripts will be automatically injected into your `index.html`.
+The `.scss` files will be compiled into `.css` and minified. The `.js` files will be transpiled using [babel](https://babeljs.io/). All the styles and scripts will be automatically injected into your `index.html`.
 
 ## Contributing
 
-If you find any issues, feel free to submit a pull request
+If you find any issue, feel free to submit a pull request
 
 ## Author
 
@@ -61,4 +61,4 @@ If you find any issues, feel free to submit a pull request
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/iClusterDev/JS-Devkit-CLI/blob/main/LICENSE)

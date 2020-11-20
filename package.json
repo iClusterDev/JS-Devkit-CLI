@@ -1,7 +1,7 @@
 {
   "name": "devkit-js",
   "version": "1.0.5",
-  "description": "DevKit project creator. Please ignore ... for now!",
+  "description": "Devkit CLI is a Command Line tool for superfast scaffolding of any simple Vanilla JavaScript App",
   "main": "index.js",
   "preferGlobal": true,
   "bin": {
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/iClusterDev/JS-Devkit-CLI.git"
   },
-  "homepage": ""
+  "homepage": "https://github.com/iClusterDev/JS-Devkit-CLI"
 }
