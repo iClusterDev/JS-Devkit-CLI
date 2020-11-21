@@ -2,27 +2,35 @@
   "name": "--project-name--",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
+    "preinstall": "npx npm-force-resolutions",
+    "clean": "rm -rf ./development && rm -rf ./.cache && rm -rf ./dist",
+    "build": "npm run clean && parcel build src/index.html --out-dir dist --public-url ./",
+    "dev": "npm run clean && parcel src/index.html --out-dir development -p 3000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {
-    "normalize-scss": "^7.0.1"
+  "resolutions": {
+    "node-forge": "0.10.0"
   },
-  "browserslist": [
-    "last 2 versions",
-    "> 1%",
-    "Firefox ESR",
-    "Opera 12.1"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "--git-url--"
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/runtime-corejs2": "^7.12.5",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.29.0"
   },
-  "homepage": "--git-url--"
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "corejs": 2,
+          "regenerator": true
+        }
+      ]
+    ]
+  }
 }
