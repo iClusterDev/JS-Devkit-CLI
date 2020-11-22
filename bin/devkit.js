@@ -12,6 +12,7 @@ program
   .action(async (projectName) => {
     try {
       await create(projectName);
+      notify.info(`good to go!`);
     } catch (error) {
       notify.failure(error.message);
     }
