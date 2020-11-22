@@ -4,7 +4,7 @@ const create = require('../lib/Create');
 const notify = require('../lib/Notify');
 const program = require('commander');
 
-program.version('1.0.0').description('DevKit CLI');
+program.version('1.1.5').description('DevKit CLI');
 
 program
   .command('create <projectName>')

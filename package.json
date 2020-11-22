@@ -1,6 +1,6 @@
 {
   "name": "devkit-js",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Devkit CLI is a Command Line tool for superfast scaffolding of any simple Vanilla JavaScript App",
   "main": "index.js",
   "preferGlobal": true,
@@ -32,6 +32,7 @@
     "inquirer": "^7.3.3",
     "ora": "^5.1.0",
     "replace-in-file": "^6.1.0",
+    "simple-git": "^2.23.0",
     "typeis.js": "^1.0.18"
   },
   "repository": {
