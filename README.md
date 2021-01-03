@@ -24,30 +24,31 @@ The created project will have the following folder structure:
 
 ```bash
 ├── ...
-├── src                 # src directory, where your stuff go
-│   ├── js              # JS components and main app.js
-│   ├── scss            # SCSS components and main main.scss
-│   ├── index.html      # main html
-├── .gitignore
-├── package-lock.json
-├── package.json
-├── main.js
-├── ...
+├── client
+│   ├── src                 # src directory, where your client stuff go
+│   │   ├── scripts         # JS components and main app.js
+│   │   ├── styles          # SCSS components and main main.scss
+│   │   ├── views           # index.html & other pages
+│   ├── .gitignore
+│   ├── package-lock.json
+│   ├── package.json
+├── LICENSE
+├── README.md
 ```
 
-Once the project is created navigate to the project directory and start building your new app. A Dev Server comes out of the box. In order to start the server run:
+Once the project is created navigate to the project directory and start building your new app. A Dev Server comes out of the box. In order to start the client side dev server run:
 
 ```bash
-npm run dev
+npm run dev:client
 ```
 
-When ready to deploy/build for production and generate the distribution files, run in the terminal:
+When ready to deploy/build the client side for production and generate the distribution files, run in the terminal:
 
 ```bash
 npm run build
 ```
 
-This will automatically generate all the distribution files and put them in the `dist` directory.
+This will automatically generate all the distribution files and put them in the auto-generated `public` directory.
 
 The `.scss` files will be compiled into `.css` and minified. The `.js` files will be transpiled using [babel](https://babeljs.io/). All the styles and scripts will be automatically injected into your `index.html`.
 
