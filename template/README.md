@@ -10,7 +10,7 @@ For any issue, feel free to submit a pull request
 
 ## Author
 
-[your-name]()
+--author-name--()
 
 ## License
 

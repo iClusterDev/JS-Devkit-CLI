@@ -5,22 +5,22 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
-    "clean": "rm -rf ./development && rm -rf ./.cache && rm -rf ./dist",
-    "build": "npm run clean && parcel build src/index.html --out-dir dist --public-url ./",
-    "dev": "npm run clean && parcel src/index.html --out-dir development -p 3000"
+    "clean": "rm -rf ./development && rm -rf ./.cache && rm -rf ./public",
+    "build": "npm run clean && parcel build src/views/index.html --out-dir public --public-url ./",
+    "dev:client": "npm run clean && parcel src/views/index.html --out-dir development -p 3000"
   },
   "keywords": [],
-  "author": "",
+  "author": "--author-name--",
   "license": "ISC",
   "resolutions": {
     "node-forge": "0.10.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/runtime-corejs2": "^7.12.5",
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.29.0"
+    "sass": "^1.32.0"
   },
   "babel": {
     "plugins": [
@@ -32,5 +32,6 @@
         }
       ]
     ]
-  }
+  },
+  "dependencies": {}
 }
